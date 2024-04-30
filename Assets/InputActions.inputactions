@@ -1,1 +1,34 @@
-{}
+{
+    "name": "InputActions",
+    "maps": [
+        {
+            "name": "Journal Controls",
+            "id": "b3ad5f26-2640-4322-9552-7c0efcff7dbe",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "bd4204cf-f19b-4800-860c-a48d5d804a8d",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "b3b64264-f3d9-40dc-afe4-a5fee827328f",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
