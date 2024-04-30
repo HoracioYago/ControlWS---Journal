@@ -304,7 +304,7 @@ GameObject:
   - component: {fileID: 846112539}
   - component: {fileID: 846112540}
   m_Layer: 0
-  m_Name: i-added-a-few-more-frames-to-my-ui-book-page-turning-v0-ynt8sog9edbb1 (1)
+  m_Name: journal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
