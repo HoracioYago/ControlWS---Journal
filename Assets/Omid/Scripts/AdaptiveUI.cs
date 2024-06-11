@@ -1,11 +1,11 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class AdaptiveUI : MonoBehaviour
+public class InputIconManager : MonoBehaviour
 {
-    public Sprite keyboardIcon;
-    public Sprite gamepadIcon;
-    public Image actionIcon;
+    public Sprite[] keyboardIcons;
+    public Sprite[] gamepadIcons;
+    public Image[] actionIcons;
 
     private bool isGamepadActive = false;
 
@@ -14,17 +14,23 @@ public class AdaptiveUI : MonoBehaviour
         if (Input.GetJoystickNames().Length > 0)
         {
             isGamepadActive = true;
-            ChangeIcon(gamepadIcon);
+            ChangeIcons(gamepadIcons);
         }
         else
         {
             isGamepadActive = false;
-            ChangeIcon(keyboardIcon);
+            ChangeIcons(keyboardIcons);
         }
     }
 
-    void ChangeIcon(Sprite newIcon)
+    void ChangeIcons(Sprite[] newIcons)
     {
-        actionIcon.sprite = newIcon;
+        for (int i = 0; i < actionIcons.Length; i++)
+        {
+            if (i < newIcons.Length)
+            {
+                actionIcons[i].sprite = newIcons[i];
+            }
+        }
     }
 }
